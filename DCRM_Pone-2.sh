@@ -29,7 +29,7 @@ systemctl restart mariadb
 echo -e "CREATE DATABASE DCRM DEFAULT CHARSET UTF8;\nGRANT ALL PRIVILEGES ON DCRM.* TO 'root'@'localhost';\nFLUSH PRIVILEGES;\nquit" | mysql -u root -p$DB_password
 
 mkdir -p /opt/wwwroot && cd /opt/wwwroot 
-git clone https://github.com/wwpp3399/DCRM_python2.git
+git clone https://github.com/wwpp3399/DCRM.git
 cd DCRM
 pip install setuptools==33.1.1
 pip install -r requirements.txt
